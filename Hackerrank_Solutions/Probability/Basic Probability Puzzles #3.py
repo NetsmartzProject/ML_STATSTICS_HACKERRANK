@@ -25,4 +25,4 @@ P2 = P_R_X * P_B_Y * P_R_Z
 P3 = P_B_X * P_R_Y * P_R_Z
 
 temp = P1+P2+P3
-print(Fraction(temp).limit_denominator(), temp)
+print(temp)
