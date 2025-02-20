@@ -2,3 +2,10 @@ numpy
 pandas 
 scikit-learn
 matplotlib
+textblob
+seaborn
+wordcloud
+emoji
+nltk
+plotly
+sqlalchemy
