@@ -9,3 +9,4 @@ emoji
 nltk
 plotly
 sqlalchemy
+pyarrow

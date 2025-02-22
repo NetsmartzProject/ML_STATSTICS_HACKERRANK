@@ -1,5 +1,4 @@
 
-
 # m= r * standard deviation of the dependent variable/standard deviation of the independent variable
 
 import math
