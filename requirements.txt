@@ -10,3 +10,6 @@ nltk
 plotly
 sqlalchemy
 pyarrow
+nltk
+contractions
+langdetect
