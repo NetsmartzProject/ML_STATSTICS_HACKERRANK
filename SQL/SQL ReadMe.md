@@ -135,5 +135,139 @@ SELECT city, AVG(distance) AS avg_distance FROM rides GROUP BY city;
 
 ---
 
+## 21. DEFINE PRIMARY KEY ? 
+ ```
+ A column (or a set of column ) whose value exists and is unique for every record in a table called a primary key 
+
+ **NOTES** - each table can have one and only one primary key and In one table, you cannot have 3 or 4 primary keys.
+
+ **Primary Key**- may be composed of a set of columns.one-column primary key = all purchases will be recorded under a 
+different number
+
+**NOTES ON PRIMARY KEY** -a column (or a set of columns) whose value exists and is unique for 
+every record in a table is called a primary key and cannot contain null values
+
+ 
+
+ ```
+
+ ## 22. DEFINE FOREIGN KEY ?
+
+ ```
+points to a column of another table and, thus, links the two tables.the foreign key maintains the referential integrity within the database.if a specific value from the parent table’s primary key has been 
+deleted, all the records from the child table referring to this value 
+will be removed as well
+
+
+```
+ **unique key** --> used whenever you would like to specify that you don’t want to see 
+duplicate data in a given field
+
+#
+**Relationships**
+relationships tell you how much of the data from a foreign key field can 
+be seen in the primary key column of the table the data is related to 
+and vice versa
+
+
+ ```
+```
+** WHERE clause** 
+it will allow us to set a condition upon which we will specify what part 
+of the data we want to retrieve from the database
+
+aggregate functions
+they are applied on multiple rows of a single column of a table and 
+return an output of a single value
+```
+
+```
+##
+**COUNT()** 
+
+counts the number of non-null records in a field and it is frequently used in combination with the reserved word “DISTINCT”.
+
+**SUM()**
+
+sums all the non-null values in a column
+
+**MIN()**
+
+returns the minimum value from the entire list
+
+**MAX()**
+
+returns the maximum value from the entire list
+
+**AVG()**
+
+calculates the average of all non-null values belonging to a certain 
+column of a table
+
+```
+
+```
+### GROUP BY--
+
+When working in SQL, results can be grouped according to a specific 
+field or fields
+
+---GROUP BY must be placed immediately after the WHERE conditions, if 
+any, and just before the ORDER BY clause
+
+in most cases, when you need an aggregate function, you must add a 
+GROUP BY clause in your query, too
+
+
+
+```
+
+
+```
+### HAVING 
+
+refines the output from records that do not satisfy a certain condition
+- frequently implemented with GROUP BY
+
+**SYNTAX** : SELECT column_name(s)
+FROM table_name
+WHERE conditions
+GROUP BY column_name(s)
+HAVING conditions
+ORDER BY column_name(s);
+
+**after HAVING, you can have a condition with an aggregate function,** 
+**while WHERE cannot use aggregate functions within its conditions**
+
+- you cannot have both an aggregated and a non-aggregated condition in 
+the HAVING clause
+
+```
+
+
+
+```
+## COALESCE() Function in SQL
+
+The COALESCE() function in SQL is used to return the first non-null value from a list of expressions. 
+It is useful for handling NULL values and ensuring that meaningful default values are returned instead of NULL.
+
+**COALESCE(expression1, expression2, ..., expressionN)*
+
+*Evaluates expressions from left to right.*
+
+*Returns the first non-null expression.*
+
+*If all expressions are NULL, it returns NULL.*
+
+*The COALESCE() function is essential for data handling, ensuring robust and clean query results by replacing NULL values with appropriate alternatives.*
+
+
+```
+
+
+
+
+
 This document provides theory explanations along with SQL queries to help in interviews and practical database usage.
 
